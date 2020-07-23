@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gunpowder:niter_block"
+    }
+  ],
+  "result": {
+    "item": "gunpowder:niter",
+    "count": 9
+  }
+}

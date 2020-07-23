@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "gunpowder:niter"
+    }
+  },
+  "result": {
+    "item": "gunpowder:niter_block"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gunpowder:sulfur_block"
+    }
+  ],
+  "result": {
+    "item": "gunpowder:sulfur",
+    "count": 9
+  }
+}

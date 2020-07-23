@@ -1,3 +1,5 @@
+import net.fabricmc.loom.task.RemapSourcesJarTask
+
 plugins {
 	id 'fabric-loom' version '0.4-SNAPSHOT'
 	id 'maven-publish'
@@ -10,6 +12,10 @@ archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+repositories {
+	maven { url 'https://jitpack.io' }
+}
+
 dependencies {
 	//to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -21,6 +27,9 @@ dependencies {
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
+
+	// Other mods
+	modImplementation 'com.github.jellysquid3:sodium-fabric:mc1.16.1-0.1.0'
 }
 
 processResources {
